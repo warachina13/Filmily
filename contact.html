@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILMILY</title>
+    <link rel="stylesheet" type="text/css" href="style_contact.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel=”shortcut icon” href=”http://example.com/favicon.png” />
+    <link rel="icon" type="image/png" sizes="16x16" href="images1/icon/logo.png">
+
+</head>
+<body>
+   <header>
+        <div class="navbar-top">
+            <div class="bar-top">
+              <div class="box-bar-top">
+            <button type="button" class="box-bar">
+              <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars" id="icon-bar"></i>
+            </span>
+            </button>
+       
+            <a href="index.html" class="text-th">TH</a>
+
+            <a href="index.html">
+                <img src="images1/icon/logo.png" class="logo">
+            </a>
+            <div class="icon-right">
+            <i class="fas fa-heart" id="icon-heart"></i>
+            <i class="fas fa-search" id="icon-search"></i>
+            <button type="button" class="navbar-boxuser">
+            <i class="fas fa-user" id="icon-user"></i>
+            </button> 
+            </div>
+              </div>
+            </div>  
+          </nav>
+          <div class="box-bar-nether">
+            <div class="bar-nether">
+            <ul class="menu">
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="film.html">FILMS</a></li>
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="contact.html" class="active" >CONTACT</a></li>
+            </ul>
+            </div>
+          </div>
+            <div class="icon-right1">
+                <i class="fas fa-heart" id="icon-heart"></i>
+                <i class="fas fa-search" id="icon-search"></i>
+                <button type="button" class="navbar-boxuser">
+                <i class="fas fa-user" id="icon-user"></i>
+                </button> 
+            </div>
+
+          </div>
+<!-- /* -----------------------------------------------Popup Bar------------------------------------------- */ -->
+<nav class="navbar"  id="js-menu" style="z-index: 1;">
+
+  <ul class="main-nav">
+      <li>
+          <a href="index.html" class="nav-links">HOME</a>
+      </li>
+      <li>
+          <a href="film.html" class="nav-links">FILMS</a>
+      </li>
+      <li>
+          <a href="#" class="nav-links">CONTENT</a>
+      </li>
+      <li>
+          <a href="contact.html" class="active">CONTACT</a>
+      </li>
+  </ul>
+</nav>
+<script>
+  let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+});
+</script>
+   </header>      <!-- -----------menu-------------- -->
+
+
+   <!-- ---------------------------------------- contact us ----------------------------------- -->
+<section>
+   <div class="contact">
+       <div class="box-medi-on"> 
+        <div class="box-bt-back">
+            <button class="bt-back">
+                <a href="index.html">
+                <img src="images1/icon/Group 33.png" class="back">
+                 back  
+                </a>
+            </button>
+         </div>
+        
+
+        <div class="contact-box-1">
+            <div class="contact-us-detail">
+               <div class="taxt-one-box">
+                <h1 class="text-head"> Contact Us!  </h1>
+                <h1 class="text-head-th"> ติดต่อ-พูดคุยกับเรา </h1>
+               </div>
+
+             <div class="detail-box">
+                 <div class="detail-1">
+                    <img src="images1/icon/advertising.png" class="ad">
+                    <h2 class="detail-ad"> Advertising </h2>
+                    <p class="Ad-detail"> สามารถกรอกรายละเอียด <br>
+                            ด้านล่าง เพื่อที่เราจะติดต่อ <br>
+                            คุณกลับไป</p>
+                 </div>
+                 <div class="detail-2">
+                        <img src="images1/icon/address.png" class="add">
+                        <h2 class="detail-add"> Contact </h2>
+                        <p class="Add-detail"> ติดต่อพูดคุยกับเราได้<br>
+                                เพียงแค่กรอกรายละเอียด
+                                </p>
+                 </div>
+
+                </div>
+
+            </div>
+        </div>    <!-- contact-box-1 -->
+      </div>
+    </div>   <!-- contact -->   
+
+
+
+    <!-- -----------------------box 2 ----------------------- -->
+
+    
+
+        <div class="contact-box-2">
+                  <div class="form-box">
+                    <div class="botton-box">
+                      <div id="btn"></div>
+                      <button type="button" class="toggle-btn" onclick="adver()" > Advertising </button>
+                      <button type="button" class="toggle-btn" onclick="add()" > Contact </button>
+                    </div>
+                 
+
+                  <form id="adver" class="input-group">
+                        <div class="tab-contents">
+                                <div class="tab-pane" id="adverti">
+                                    <div class="text-form-ad">
+                                         <h2 class="text-form" > กรุณากรอกรายละเอียด </h2>
+                                    </div>
+
+                                      <div class="box-small-detail">
+                                            <label for="fname" class="input-de">E-mail</label> 
+                                            <input type="text" class="input" id="fname" name="email" placeholder="E-mail"> 
+                                          
+                                            <label for="lname" class="input-de">Tol</label> 
+                                            <input type="text"  class="input-1"  id="lname" name="lastname" placeholder="Tol"> 
+                                        
+                                            <label for="lname" class="input-de" >Time</label> <br>
+                                            <select class="time-name1">
+                                              <option value="#" selected>Time</option>
+                                              <option value="#">00.00 - 11.59 Am</option>
+                                              <option value="#">12.00 - 23.59 Pm</option>  
+                                           </select> 
+                                           <label for="lname" class="input-de-1">Type</label> <br>
+                                           <select class="type-name2">
+                                            <option value="#">type</option>
+                                            <option value="#" selected>Text ads</option>
+                                            <option value="#">Shopping ads</option>
+                                            <option value="#">Image ads</option>
+                                            <option value="#">Video ads</option>
+                                        </select>
+
+                                        <label for="lname" class="input-de">Detail</label> 
+                                        <input type="text"  class="input-3"  id="lname" name="lastname" placeholder="Detail"> 
+
+                                    </div>
+                                    <div class="box-small-compare2">
+                                            <button class="bt-compare">Submit</button>
+                                    </div>
+
+                                </div>
+                              </div>
+                      </form>
+
+                      <form id="add" class="input-group">
+                          <div class="tab-contents">
+                                  <div class="tab-pane" id="add">
+                                      <div class="text-form-ad">
+                                           <h2 class="text-form" > กรุณากรอกรายละเอียด </h2>
+                                      </div>
+  
+                                        <div class="box-small-detail">
+
+                                              <label for="fname" class="input-de">E-mail</label> 
+                                              <input type="text" class="input" id="email" name="email" placeholder="E-mail"> 
+                                            
+                                              <label for="lname" class="input-de">Tol</label> 
+                                              <input type="text"  class="input-1"  id="tol" name="tol" placeholder="Tol"> 
+                                          
+                                              <label for="lname" class="input-de" > Name</label>
+                                              <input class="time-name1" type="text" id="fname" name="f-name" placeholder="name" >
+                                              
+                                             <label for="lname" class="input-de-1">Lastname</label> 
+                                             <input class="type-name2" type="text" id="lname" name="l-name" placeholder="lastname">
+                                          
+  
+                                          <label for="lname" class="input-de">Message</label> 
+                                          <input type="text"  class="input-3"  id="mes" name="mess" placeholder="message"> 
+  
+                                      </div>
+                                      <div class="box-small-compare2">
+                                              <button class="bt-compare">Submit</button>
+                                      </div>
+  
+                                  </div>
+                                </div>
+                        </form>
+
+                    </div>
+              </div>   <!-- contact-box-2 -->         
+<!-- /****************************************** Footer  *********************************/ -->
+<footer>
+  <div class="bgfooter" style="z-index: 1;">
+    <div class="box-logo">
+    <a href="index.html">
+      <img src="images1/icon/logo.png" class="logo-down">
+    </a>
+    <p class="text-www">www.filmiry.com</p>
+    </div>
+
+    <div class="box-contact">
+      <p class="text-contact">CONTACT US</p>
+      <p class="text-contact2">
+        Contact Phone: 042-0318-13 <br>
+        INFO@FILMIRYBKK.COM</p>
+    </div>
+
+    <div class="box-follow">
+      <div class="box-follow-small">
+      <p class="text-contact">FOLLOW US</p>
+      <button type="button" class="box-font">
+        <p class="text-font">F</p>
+      </button>
+      <button type="button" class="box-font">
+        <p class="text-font">G</p>
+      </button>
+    </div>
+    </div>
+  </div>
+</footer> 
+
+</section>
+
+
+
+ <script>
+ var x = document.getElementById("adver");
+ var y = document.getElementById("add");
+ var z = document.getElementById("btn");
+ 
+   function add (){
+     x.style.left = "-890px";
+     y.style.left = "10px";
+     z.style.left = "160px";
+   }
+   function adver (){
+     x.style.left = "10px";
+     y.style.left = "900px";
+     z.style.left = "0px";
+   }
+ 
+ </script>
+
+</body>
+</html>

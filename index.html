@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILMILY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel=”shortcut icon” href=”http://example.com/favicon.png” />
+    <link rel="icon" type="image/png" sizes="16x16" href="images1/icon/logo.png">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</head>
+<body>
+    <header>
+      <div class="box-header">
+        <div class="navbar-top">
+            <div class="bar-top">
+              <div class="box-bar-top">
+            <button type="button" class="box-bar">
+              <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars" id="icon-bar"></i>
+            </span>
+            </button>
+       
+            <a href="index.html" class="text-th">TH</a>
+
+            <a href="index.html">
+                <img src="images1/icon/logo.png" class="logo">
+            </a>
+            <div class="icon-right">
+            <i class="fas fa-heart" id="icon-heart"></i>
+            <i class="fas fa-search" id="icon-search"></i>
+            <button type="button" class="navbar-boxuser">
+            <i class="fas fa-user" id="icon-user"></i>
+            </button> 
+            </div>
+              </div>
+            </div>  
+          </nav>
+          <div class="box-bar-nether">
+            <div class="bar-nether">
+            <ul class="menu">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="film.html">FILMS</a></li>
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            </div>
+          </div>
+            <div class="icon-right1">
+                <i class="fas fa-heart" id="icon-heart"></i>
+                <i class="fas fa-search" id="icon-search"></i>
+                <button type="button" class="navbar-boxuser">
+                <i class="fas fa-user" id="icon-user"></i>
+                </button> 
+            </div>
+
+          </div>
+<!-- /* -----------------------------------------------Popup Bar------------------------------------------- */ -->
+<nav class="navbar"  id="js-menu">
+
+  <ul class="main-nav">
+      <li>
+          <a href="index.html" class="active">HOME</a>
+      </li>
+      <li>
+          <a href="film.html" class="nav-links">FILMS</a>
+      </li>
+      <li>
+          <a href="#" class="nav-links">CONTENT</a>
+      </li>
+      <li>
+          <a href="contact.html" class="nav-links">CONTACT</a>
+      </li>
+  </ul>
+</nav>
+<script>
+  let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+});
+</script>
+
+<!-- /****************************************** header nether bar *********************************/ -->
+        <div class="header-nether-bar">
+            <div class="header-nether-bar-box1">
+                <h1 class="text-header">
+                    Select <br/> the type <br/>
+                    of <br/>
+                    film <br/> you want
+                </h1>
+            </div>
+          
+            <div class="header-nether-bar-box2">
+                <div class="container">
+                    <div class="images-type">
+                      <p class="text-type">Color <br/> Negative</p>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <div class="images-type2">
+                      <p class="text-type">Color <br/> Slide</p>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <div class="images-type3">
+                      <p class="text-type">Black <br/> & <br/> White</p>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <div class="images-type4">
+                      <p class="text-type">Black & White <br/> Slide</p>
+                    </div>
+                </div>
+              </div>
+              <a class="prev" onclick="plusDivs(-1)"><i class="fas fa-long-arrow-alt-left"></i></a>
+              <a class="next" onclick="plusDivs(1)"><i class="fas fa-long-arrow-alt-right"></i></a>
+    
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+               
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("container");
+                  if (n > x.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = x.length} ;
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+    
+            </script>
+<!-- /****************************************** header nether bar tablet *********************************/ -->
+          <div class="contro-box1">
+            <div class="header-nether-bar-box1-tablet">
+                <h1 class="text-header-tablet">
+                    Select the type <br/>
+                    of <br/>
+                    film you want
+                </h1>
+            </div>
+          </div>  
+          <div class="contro-box2">    
+           <div class="header-nether-bar-box2-tablet">
+            <div class="container-tablet">
+                <div class="images-type-tablet">
+                  <p class="text-type-tablet">Color <br/> Negative</p>
+                </div>
+            </div>
+
+            <div class="container-tablet2">
+                <div class="images-type2-tablet">
+                  <p class="text-type-tablet">Color <br/> Slide</p>
+                </div>
+            </div>
+
+            <div class="container-tablet">
+                <div class="images-type3-tablet">
+                  <p class="text-type-tablet">Black <br/> & <br/> White</p>
+                </div>
+            </div>
+
+            <div class="container-tablet2">
+                <div class="images-type4-tablet">
+                  <p class="text-type-tablet">Black & White <br/> Slide</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </header>
+    
+
+<!-- /****************************************** Compare *********************************/ -->
+
+  <section>
+    <div class="bgcompare">
+
+      <h1 class="text-compare">เปรียบเทียบ </h1>
+      <h2 class="text-films">Films</h2>
+      <h3 class="text-see">เพื่อดูความแตกต่าง</h3>
+      <div class="box-big-compare">
+        <div class="box-small-compare">
+          <select class="compare-name1">
+            <option value="#" selected>Fuji Superia 200</option>
+            <option value="#">Lomography CN 800</option>
+            <option value="#">Adox SilverMax</option>
+            <option value="#">Fuji Neopan 400CN</option>
+            <option value="#">Fomapan 100 Classic</option>
+            <option value="#">Lomochrome Purple XR</option>
+         </select>
+         <select class="compare-name2">
+          <option value="#">Fuji Superia 200</option>
+          <option value="#" selected>Lomography CN 800</option>
+          <option value="#">Adox SilverMax</option>
+          <option value="#">Fuji Neopan 400CN</option>
+          <option value="#">Fomapan 100 Classic</option>
+          <option value="#">Lomochrome Purple XR</option>
+      </select>
+        </div>
+      <div class="box-small-compare2">
+      <button class="bt-compare">เปรียบเทียบ</button>
+      </div>
+      </div>
+
+      <div class="box-big-show">
+        <div class="box-small-show">
+          <div class="box-show1">
+            <p class="text-name1">Fuji Superia 200</p>
+            <img src="images1/Fuji Superia 200.jpg" class="im-com1">
+            <div class="box-inshow1">
+              <img src="images1/icon/movie.png" class="icon-inshow1">
+              <p class="text-iconshow1">Color Negative</p>
+            </div>
+            <div class="box-inshow2">
+              <img src="images1/icon/organization.png" class="icon-inshow1">
+              <p class="text-iconshow1">Fujifilm</p>
+            </div>
+            <div class="box-inshow1">
+              <img src="images1/icon/photo-reel.png" class="icon-inshow1">
+              <p class="text-iconshow1">35mm</p>
+            </div>
+            <div class="box-inshow2">
+              <img src="images1/icon/globe.png" class="icon-inshow1">
+              <p class="text-iconshow1">Japan</p>
+            </div>
+            <div class="line"></div>
+            <img src="images1/Ngoc Vu1.jpg" class="im-show1">
+            <img src="images1/Oleksandr Samoylyk3.jpg" class="im-show3">
+            <img src="images1/Bradley Higginson2.jpg" class="im-show2">
+            <img src="images1/zeonet4.jpg" class="im-show4">
+            <div class="box-inshow">
+              <p class="text-lode">ดูเพิ่มเติม</p>
+              <i class="fas fa-long-arrow-alt-right" id="icon-lond"></i>
+            </div>
+          </div>
+    
+          <div class="box-show2">
+            <p class="text-name1">Lomography CN 800</p>
+            <img src="images1/Lomography CN 800.jpg" class="im-com1">
+            <div class="box-inshow1">
+              <img src="images1/icon/movie.png" class="icon-inshow1">
+              <p class="text-iconshow1">Color Negative</p>
+            </div>
+            <div class="box-inshow2">
+              <img src="images1/icon/organization.png" class="icon-inshow1">
+              <p class="text-iconshow1">Fujifilm</p>
+            </div>
+            <div class="box-inshow1">
+              <img src="images1/icon/photo-reel.png" class="icon-inshow1">
+              <p class="text-iconshow1">35mm</p>
+            </div>
+            <div class="box-inshow2">
+              <img src="images1/icon/globe.png" class="icon-inshow1">
+              <p class="text-iconshow1">Japan</p>
+            </div>
+            <div class="line"></div>
+            <img src="images1/Simon Greening2.jpg" class="im-show1">
+            <img src="images1/Charley Lhasa3.jpg" class="im-show3">
+            <img src="images1/Konstantin Surovov4.jpg" class="im-show2">
+            <img src="images1/Konstantin Surovov1.jpg" class="im-show4">
+            <div class="box-inshow">
+              <p class="text-lode">ดูเพิ่มเติม</p>
+              <i class="fas fa-long-arrow-alt-right" id="icon-lond"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="box-text-video-mobil">
+      <p class="text-popular">POPULAR  FILMS</p>
+      <div class="line1"></div>
+      <p class="text-popular-th">ฟิล์มที่กำลังมาแรงในขณะนี้</p>
+    </div>
+    </div>
+  </section>
+
+<!-- /****************************************** Popular  Films *********************************/ -->
+  <section>
+    <div class="popular">
+      <div class="video-container">
+      <div class="box-text-video" style="z-index: 1;">
+        <p class="text-popular-tablet">POPULAR  FILMS</p>
+        <div class="line1-tablet"></div>
+        <p class="text-popular-th-tablet">ฟิล์มที่กำลังมาแรงในขณะนี้</p>        
+        <p class="text-kodak">Kodak <br> Tri-X 400</p> 
+        <button class="box-lode1">
+          <p class="text-lode1">ดูเพิ่มเติม
+            <i class="fas fa-long-arrow-alt-right"></i></p> 
+        </button>      
+      </div>
+        <video id="background-video" autoplay muted loop>
+          <source src="images1/Kodak Tri X 400 Street Photograpy..mp4" type="video/mp4">
+        </video>
+      </div>
+    </div> 
+    <div class="box-lode-big">
+    <div class="box-lode-small"> 
+      <button class="box-lode2">
+        <p class="text-lode2">ดูเพิ่มเติม
+          <i class="fas fa-long-arrow-alt-right"></i></p> 
+      </button>
+    </div>
+    </div>
+  </section>
+<!-- /****************************************** Recommend Films *********************************/ -->
+  <section>
+    <div class="bgrecommend">
+      <div class="box-big-Recommend">
+      <div class="header-recommend">
+        <p class="text-recommend">Recommend Films</p>
+        <p class="text-recommend-th">แนะนำฟิล์ม สำหรับมือใหม่ _________</p>
+      </div>
+    <ul>
+
+      <li class="recommend">
+          <div class="box-recommend">
+              <img src="images1/5-matteo-bagnoli Fuji Pro 400H.jpg" class="im-recommend">
+              <div class="body-recommend">
+                  <p class="text-header-recommend">Fuji Pro 400H</p>
+                  <p class="text-srecommend">
+                    อีกหนึ่งฟิล์มในดวงใจของใครหลายคน Fuji Japan 100 
+                    บอกเลยว่าให้โทนสีที่สวยมาก  ไม่ว่าจะถ่ายที่ไหน ก็ทำให้ภาพ
+                    ของเราเหมือนถ่ายที่ญี่ปุ่นไปซะหมด ใครที่ยังไม่ได้ลองเล่น 
+                    ต้องหามาลองเล่นแล้ว ถ่ายในสภาพแสงจ้าได้ดี แต่ถ้าแสง
+                    น้อยต้องระวังภาพเบลอจะถ่ายคน ถ่ายวิวก็สวยหมดจ้า                    
+                  </p>
+                  <p class="text-srecommend2">
+                    <br>เหมาะกับ : ถ่ายกลางวัน โทนอมเขียว ฟีลญี่ปุ่น <br>
+                    เหมากับแนว : Portrait, Landscape , Natural <br>
+                    ราคา : 150-190 บาท (36 รูป เฉลี่ยรูปละ 5.3 บาท) 
+                  </p>
+              </div>
+          </div>
+      </li>
+
+      <li class="recommend">
+        <div class="box-recommend2">
+            <img src="images1/DSCF0095.jpg" class="im-recommend2">
+            <div class="body-recommend2">
+                <p class="text-header-recommend2">Kodok Portra 400 </p>
+                <p class="text-srecommend">
+                  Kodok Portra 400 งานละเอียดคล้ายกันกับ Kodak
+                  Portra 160 ต่างกันที่ ISO นั่นเอง ทำให้เจ้าตัวนี้สามารถ
+                  ถ่ายในที่มืดได้ดีกว่า ถ้านำไปถ่ายคนสีผิวที่ได้จะออกอม
+                  ชมพูอยู่บ้าง เหมาะกับการถ่ายแฟชั่น หรืองานสำคัญ                  
+                </p>
+                <p class="text-srecommend2">
+                  <br>เหมากับ : Contrast จัด เกรนละเอียด โทนอมฟ้า<br>
+                  เหมาะกับแนว : Portrait, Landscape, Street<br>
+                  ราคา : 240-270 บาท (36 รูป เฉลี่ยรูปละ 7.5 บาท)  
+                </p>
+            </div>
+        </div>
+    </li>
+
+    </ul>
+    <button class="box-lond-recommend">
+      <p class="text-lond-recommend">รายละเอียดเพิ่มเติม
+        <i class="fas fa-long-arrow-alt-right"></i></p>
+    </button>
+    </div>
+  </div>
+
+  </section>
+
+<!-- /****************************************** Contents  *********************************/ -->
+<section>
+  <div class="bgcontents">
+    <div class="header-contents">
+      <p class="text-contents">Contents</p>
+      <p class="text-contents-th">คอนเทนต์ใหม่สำหรับคุณ</p>
+    </div>
+    
+    <div class="box-contents">
+
+  <div class="testimonial-carousel">
+      <div class="content">
+        <img src="images1/7c-film.jpg" class="im-content">
+        <div class="box-text-content">
+          <p class="text-del-content">
+            วิธีที่จะทำให้คุณเก็บรูปภาพ
+            ฟิล์มให้มีอายุยาวนานมากขึ้น!
+            มาดูกันเลย!
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="box-text-content">
+          <p class="text-del-content">
+          ไอเดียรูปถ่ายจากกล้องฟิล์ม 
+          คงเสน่ห์วินเทจน่าหลงใหล 
+          </p>
+        </div>
+        <img src="images1/1-6.jpg" class="im-content">
+      </div>
+
+      <div class="content">
+        <img src="images1/768x512x2.jpg" class="im-content">
+        <div class="box-text-content">
+          <p class="text-del-content">
+            มาดู! 7 เทคนิคการถ่ายภาพสัตว์เลี้ยง
+            จากกล้องฟิล์ม ที่ทำให้ถ่ายรูปน้องๆ
+            ได้ง่ายขึ้น!
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="box-text-content">
+          <p class="text-del-content">
+          ไอเดียรูปถ่ายจากกล้องฟิล์ม 
+          คงเสน่ห์วินเทจน่าหลงใหล 
+          </p>
+        </div>
+        <img src="images1/1-6.jpg" class="im-content">
+      </div>
+
+      <div class="content">
+        <img src="images1/7c-film.jpg" class="im-content">
+        <div class="box-text-content">
+          <p class="text-del-content">
+            วิธีที่จะทำให้คุณเก็บรูปภาพ
+            ฟิล์มให้มีอายุยาวนานมากขึ้น!
+            มาดูกันเลย!
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="box-text-content">
+          <p class="text-del-content">
+          ไอเดียรูปถ่ายจากกล้องฟิล์ม 
+          คงเสน่ห์วินเทจน่าหลงใหล 
+          </p>
+        </div>
+        <img src="images1/1-6.jpg" class="im-content">
+      </div>
+
+      <div class="content">
+        <img src="images1/768x512x2.jpg" class="im-content">
+        <div class="box-text-content">
+          <p class="text-del-content">
+            มาดู! 7 เทคนิคการถ่ายภาพสัตว์เลี้ยง
+            จากกล้องฟิล์ม ที่ทำให้ถ่ายรูปน้องๆ
+            ได้ง่ายขึ้น!
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="box-text-content">
+          <p class="text-del-content">
+          ไอเดียรูปถ่ายจากกล้องฟิล์ม 
+          คงเสน่ห์วินเทจน่าหลงใหล 
+          </p>
+        </div>
+        <img src="images1/1-6.jpg" class="im-content">
+      </div>
+      
+  </div>
+   
+      <button class="box-lond-contents">
+        <p class="text-lond-recommend">เพิ่มเติม
+          <i class="fas fa-long-arrow-alt-right"></i></p>
+      </button>
+    </div>
+  </div>
+
+<script>
+  $(document).ready(function() {
+    $(".testimonial-carousel").slick({
+        infinite: !0,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: !1,
+        arrows:true,
+        prevArrow:'<i class="fas fa-arrow-left" id="icon-con-left"></i>',
+        nextArrow:'<i class="fas fa-arrow-right" id="icon-con-right"></i>',
+        responsive: [{
+            breakpoint: 1080,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1
+            }
+        }]    
+    });
+});
+</script>
+
+</section>
+
+<!-- /****************************************** Films  *********************************/ -->
+
+<section>
+ <div class="product">
+  <div class="bgproduct">
+    <div class="box-text-product-head">
+    <p class="text-product">Films</p> 
+    </div>
+    <div class="box-big-product">
+  <div class="box-medium--product">
+      <div class="box-small-product">
+        <img src="images1/fuji-neopan-400cn.27eb795.jpg" class="im-product">
+      <div class="box-text-product">
+        <p class="text-name-product">Fuji Neopan 400CN</p>
+      </div>
+        <div class="box-product-show">
+          <img src="images1/icon/movie.png" class="icon-product">
+          <p class="text-icon-product">Black & White</p>
+        </div>
+        <div class="box-product-show">
+          <img src="images1/icon/organization.png" class="icon-product">
+          <p class="text-icon-product">ADOX</p>
+        </div>
+        <div class="box-product-show">
+          <img src="images1/icon/photo-reel.png" class="icon-product">
+          <p class="text-icon-product">35mm</p>
+        </div>
+        <div class="box-product-show">
+          <img src="images1/icon/globe.png" class="icon-product">
+          <p class="text-icon-product">Japan</p>
+        </div> 
+        <div class="box-product-londin">
+          <p class="text-lode-product">ดูเพิ่มเติม</p>
+          <i class="fas fa-long-arrow-alt-right" id="icon-lond"></i>
+        </div>
+      </div>
+      
+        <div class="box-small-product2">
+          <img src="images1/lomochrome-purple-xr.61bb948.jpg" class="im-product">
+        <div class="box-text-product">
+          <p class="text-name-product">Lomochrome Purple XR</p>
+        </div>
+          <div class="box-product-show">
+            <img src="images1/icon/movie.png" class="icon-product">
+            <p class="text-icon-product">Color Negative</p>
+          </div>
+          <div class="box-product-show">
+            <img src="images1/icon/organization.png" class="icon-product">
+            <p class="text-icon-product">Lomography</p>
+          </div>
+          <div class="box-product-show">
+            <img src="images1/icon/photo-reel.png" class="icon-product">
+            <p class="text-icon-product">35mm</p>
+          </div>
+          <div class="box-product-show">
+            <img src="images1/icon/globe.png" class="icon-product">
+            <p class="text-icon-product">Czech Rep</p>
+          </div> 
+          <div class="box-product-londin">
+            <p class="text-lode-product">ดูเพิ่มเติม</p>
+            <i class="fas fa-long-arrow-alt-right" id="icon-lond"></i>
+          </div>
+    </div>
+  </div>
+    
+  <div class="box-medium--product2">
+    <div class="box-small-product">
+      <img src="images1/adox-silvermax.89781b3.jpg" class="im-product">
+    <div class="box-text-product">
+      <p class="text-name-product">Adox SilverMax</p>
+    </div>
+      <div class="box-product-show">
+        <img src="images1/icon/movie.png" class="icon-product">
+        <p class="text-icon-product">Black & White</p>
+      </div>
+      <div class="box-product-show">
+        <img src="images1/icon/organization.png" class="icon-product">
+        <p class="text-icon-product">ADOX</p>
+      </div>
+      <div class="box-product-show">
+        <img src="images1/icon/photo-reel.png" class="icon-product">
+        <p class="text-icon-product">35mm</p>
+      </div>
+      <div class="box-product-show">
+        <img src="images1/icon/globe.png" class="icon-product">
+        <p class="text-icon-product">Belgium</p>
+      </div> 
+      <div class="box-product-londin">
+        <p class="text-lode-product">ดูเพิ่มเติม</p>
+        <i class="fas fa-long-arrow-alt-right" id="icon-lond"></i>
+      </div>
+    </div>
+    
+      <div class="box-small-product2">
+        <img src="images1/fomapan-100-classic.82e7893.jpg" class="im-product">
+      <div class="box-text-product">
+        <p class="text-name-product">Fomapan 100 Classic</p>
+      </div>
+        <div class="box-product-show">
+          <img src="images1/icon/movie.png" class="icon-product">
+          <p class="text-icon-product">Black & White</p>
+        </div>
+        <div class="box-product-show">
+          <img src="images1/icon/organization.png" class="icon-product">
+          <p class="text-icon-product">ADOX</p>
+        </div>
+        <div class="box-product-show">
+          <img src="images1/icon/photo-reel.png" class="icon-product">
+          <p class="text-icon-product">35mm, 120, <br> Sheet film</p>
+        </div>
+        <div class="box-product-show">
+          <img src="images1/icon/globe.png" class="icon-product">
+          <p class="text-icon-product">Czech Rep</p>
+        </div> 
+        <div class="box-product-londin">
+          <p class="text-lode-product">ดูเพิ่มเติม</p>
+          <i class="fas fa-long-arrow-alt-right" id="icon-lond"></i>
+        </div>
+    </div>
+  </div>
+  <div class="box-big-lond-product">
+    <button class="box-lond-product">
+      <p class="text-lond-recommend">คลิกเพื่อดู Films ทั้งหมด
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </p>
+    </button> 
+  </div>
+  </div>
+  </div>
+ </div>
+</section>
+
+<!-- /****************************************** Footer  *********************************/ -->
+<footer>
+  <div class="bgfooter">
+    <div class="box-logo">
+    <a href="index.html">
+      <img src="images1/icon/logo.png" class="logo-down">
+    </a>
+    <p class="text-www">www.filmiry.com</p>
+    </div>
+
+    <div class="box-contact">
+      <p class="text-contact">CONTACT US</p>
+      <p class="text-contact2">
+        Contact Phone: 042-0318-13 <br>
+        INFO@FILMIRYBKK.COM</p>
+    </div>
+
+    <div class="box-follow">
+      <div class="box-follow-small">
+      <p class="text-contact">FOLLOW US</p>
+      <button type="button" class="box-font">
+        <p class="text-font">F</p>
+      </button>
+      <button type="button" class="box-font">
+        <p class="text-font">G</p>
+      </button>
+    </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
