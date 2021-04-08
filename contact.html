@@ -92,7 +92,7 @@ navBarToggle.addEventListener('click', function () {
    <!-- ---------------------------------------- contact us ----------------------------------- -->
 <section>
    <div class="contact">
-        
+       <div class="box-medi-on"> 
         <div class="box-bt-back">
             <button class="bt-back">
                 <a href="index.html">
@@ -101,7 +101,7 @@ navBarToggle.addEventListener('click', function () {
                 </a>
             </button>
          </div>
-    
+        
 
         <div class="contact-box-1">
             <div class="contact-us-detail">
@@ -130,18 +130,27 @@ navBarToggle.addEventListener('click', function () {
 
             </div>
         </div>    <!-- contact-box-1 -->
+      </div>
+    </div>   <!-- contact -->   
 
 
+
+    <!-- -----------------------box 2 ----------------------- -->
+
+    
 
         <div class="contact-box-2">
-                  <div class="tab-example">
-                        <ul class="tabs">
-                          <li class="tab-link current" data-tab="home" style="color: #F65129; font-weight: bold;">Advertising</li>
-                          <li class="tab-link" data-tab="contact">Contact</li>
-                        </ul>
+                  <div class="form-box">
+                    <div class="botton-box">
+                      <div id="btn"></div>
+                      <button type="button" class="toggle-btn" onclick="adver()" > Advertising </button>
+                      <button type="button" class="toggle-btn" onclick="add()" > Contact </button>
+                    </div>
+                 
 
+                  <form id="adver" class="input-group">
                         <div class="tab-contents">
-                                <div class="tab-pane current" id="Adverti">
+                                <div class="tab-pane" id="adverti">
                                     <div class="text-form-ad">
                                          <h2 class="text-form" > กรุณากรอกรายละเอียด </h2>
                                     </div>
@@ -173,14 +182,50 @@ navBarToggle.addEventListener('click', function () {
 
                                     </div>
                                     <div class="box-small-compare2">
-                                            <button class="bt-compare">submit</button>
+                                            <button class="bt-compare">Submit</button>
                                     </div>
 
                                 </div>
                               </div>
-                  </div>
+                      </form>
 
-                  <!-- /****************************************** Footer  *********************************/ -->
+                      <form id="add" class="input-group">
+                          <div class="tab-contents">
+                                  <div class="tab-pane" id="add">
+                                      <div class="text-form-ad">
+                                           <h2 class="text-form" > กรุณากรอกรายละเอียด </h2>
+                                      </div>
+  
+                                        <div class="box-small-detail">
+
+                                              <label for="fname" class="input-de">E-mail</label> 
+                                              <input type="text" class="input" id="email" name="email" placeholder="E-mail"> 
+                                            
+                                              <label for="lname" class="input-de">Tol</label> 
+                                              <input type="text"  class="input-1"  id="tol" name="tol" placeholder="Tol"> 
+                                          
+                                              <label for="lname" class="input-de" > Name</label>
+                                              <input class="time-name1" type="text" id="fname" name="f-name" placeholder="name" >
+                                              
+                                             <label for="lname" class="input-de-1">Lastname</label> 
+                                             <input class="type-name2" type="text" id="lname" name="l-name" placeholder="lastname">
+                                          
+  
+                                          <label for="lname" class="input-de">Message</label> 
+                                          <input type="text"  class="input-3"  id="mes" name="mess" placeholder="message"> 
+  
+                                      </div>
+                                      <div class="box-small-compare2">
+                                              <button class="bt-compare">Submit</button>
+                                      </div>
+  
+                                  </div>
+                                </div>
+                        </form>
+
+                    </div>
+              </div>   <!-- contact-box-2 -->         
+<!-- /****************************************** Footer  *********************************/ -->
 <footer>
   <div class="bgfooter" style="z-index: 1;">
     <div class="box-logo">
@@ -210,23 +255,28 @@ navBarToggle.addEventListener('click', function () {
     </div>
   </div>
 </footer> 
-        </div>   <!-- contact-box-2 -->
-</div>   <!-- contact -->
+
 </section>
 
 
-   <!-- <script>
-        $(function() {
-            $('.tabs li').on('click', function() {
-                var tabId = $(this).attr('data-tab');
-        
-                $('.tabs li').removeClass('current'); 
-                $('.tab-pane').removeClass('current'); 
-        
-                $(this).addClass('current');
-                $('#' + tabId).addClass('current');
-            });
-        });</script> -->
+
+ <script>
+ var x = document.getElementById("adver");
+ var y = document.getElementById("add");
+ var z = document.getElementById("btn");
+ 
+   function add (){
+     x.style.left = "-890px";
+     y.style.left = "10px";
+     z.style.left = "160px";
+   }
+   function adver (){
+     x.style.left = "10px";
+     y.style.left = "900px";
+     z.style.left = "0px";
+   }
+ 
+ </script>
 
 </body>
 </html>
