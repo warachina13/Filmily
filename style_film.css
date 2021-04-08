@@ -164,15 +164,14 @@ a.active{
 }
 .left-col{
     height: 1090px;
-    width: 100%;
+    width: 35%;
     margin: auto;
     float: left;
 }
 .box-bt-back{
     height: 80px;
-    width: 270px;
-    display: block;
-    margin: auto;
+    width: 100%;
+    float: left;
 }
 .bt-back {
     width: 160px;
@@ -182,9 +181,12 @@ a.active{
     border-radius: 27px;
     font-family: Sukhumvit Set;
     font-size: 16px;
-    margin-top: 25px;
+    transform: translate(-41px, 20px); 
     box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    margin-bottom: 1%;
     cursor: pointer;
+    display: block;
+    margin: auto;
 }
 .bt-back:hover{
     background-color: #F65129;
@@ -212,6 +214,7 @@ a.active{
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     display: block;
     margin: auto;
+    transform: translate(37px, 15px);
 }
 #icon-heart-film{
     font-size: x-large;
@@ -276,7 +279,7 @@ a.active{
     opacity: 0.7;
 }
 .box-Detail{
-    height: 380px;
+    height: 405px;
     width: 100%;
    float: left;
 }
@@ -294,7 +297,7 @@ a.active{
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     display: block;
     margin: auto;
-    /* transform: translate(55px, 13px);  */
+    transform: translate(55px, 13px); 
 }
 .detail-name{
     border-radius: 10px;
@@ -372,7 +375,7 @@ a.active{
     float: left;
 }
 .box-Order{
-    height: 40px;
+    height: 120px;
     width: 100%;
     float: left;
 }
@@ -389,6 +392,7 @@ a.active{
     box-shadow: 2px 2px 5px rgba(0,0,0,.2);
     display: block;
     margin: auto;
+    transform: translate(30px, 40px); 
 }
 .bt-Order:hover{
     background-color: rgb(255, 255, 255);
@@ -398,7 +402,6 @@ a.active{
     height: 230px;
     width: 100%;
     float: left;
-    margin-top: 5%;
 }
 .box-camera-inshow1{
     border-style: solid;
@@ -410,6 +413,7 @@ a.active{
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     display: block;
     margin: auto;
+    transform: translate(30px, 9px);
 }
 .text-camera1{
     width: 300%;
@@ -441,62 +445,71 @@ a.active{
 }
 .right-col{
     height: 1200px;
-    width: 100%;
+    width: 65%;
+    margin: auto;
     float: left;
 }
 .box-example-right{
     height: 670px;
     width:100%;
+    margin-top: 95px;
     float: left;
 }
 .box-example{
     border-style: solid;
     width: 300px;
-    height: 650px;
+    height: 680px;
     border-radius: 10px;
     border-color: #979797;
     background-color: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
-    display: block;
-    margin: auto;
-}
-.box-head-img{
-    width: 100%;
-    height: 50px;
+    /* display: block;
+    margin: auto; */
+    /* transform: translate(-20px, -20px);  */
+    margin-left: -5%;
+    margin-top: 5%;
 }
 .icon-example1{
     width: 26px;
     height: 26px;
-    margin-left: 25px;
-    margin-right: 10px;
-    margin-top: 8px;
+    margin-left: 5.6%;
+    margin-right: 2%;
+    margin-top: 2%;
     float: left;
     cursor: pointer;
 }
 .box-example-img{
     width: 300px;
-    height: 550px;
+    height: 580px;
 }
+/* .testimonial-carousel{
+    background-color: aqua;
+    margin-left: 4.8%;
+    margin-right: -70%;
+} */
 .example-name1{
     font-family: Sukhumvit Set;
     font-size: 18px;
     color: rgb(63, 63, 63);
     font-weight: Medium;
+    padding-top: 2%;
 }
 .box-example-img1{
-    width: 100%;
-    height: 180px;
-    display: block;
-    margin: auto;
+    width: 230px;
+    height: 165px;
+    margin-left:5%;
+    margin-right: 18%;
+    float: left;
     cursor: pointer;
 }
 .img-example1{
     width: 230px;
     height: 165px;
     border: 1px solid #5a5a5a;
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 100%;
+    float: left;
     cursor: pointer;
 }
 .img-example1:hover{
@@ -512,16 +525,16 @@ a.active{
     font-weight: lighter;
     font-style: italic;
     text-align: right;
-    margin-top: -15%;
-    margin-left: -230%;
+    margin-top: -20%;
+    margin-left: -250%;
     cursor: pointer;
 }
 .icon-example2{
     width: 15px;
     height: 15px;
-    float: left;
-    margin-left: 50%;
-    margin-top: -15%;
+    margin-left: 70%;
+    margin-right: 5%;
+    margin-top: -11%;
     float: left;
     text-align: left;
     opacity: 0.7;
@@ -536,16 +549,21 @@ a.active{
     font-family: Sukhumvit Set;
     font-size: 16px;
     color: #5f5f5f;
-    display: block;
-    margin: auto;
+    margin-top: 5%;
+    margin-left: 15%;
     cursor: pointer;
+    margin-bottom: 1%;
 }
 #down-example{
     color: #030303;
+    margin-top: 2%;
+    margin-left: 3%;
 }
 .review{
     height: 230px;
     width:100%;
+    margin: auto;
+    margin-top: 2%;
     float: left;
 }
 .box-review{
@@ -558,6 +576,7 @@ a.active{
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     display: block;
     margin: auto;
+    transform: translate(-70px, 6px);
 }
 .head-review{
     border-radius: 10px;
@@ -629,10 +648,11 @@ a.active{
     display: inline-table;
 }
 .articles{
-    height: 150px;
+    height: 220px;
     width:100%;
     margin: auto;
     float: left;
+    margin-top: 1.3%;
 }
 .box-articles-inshow1{
     border-style: solid;
@@ -642,8 +662,9 @@ a.active{
     border-color: #979797;
     background-color: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
-    display: block;
-    margin: auto;
+    /* display: block;
+    margin: auto; */
+    transform: translate(-70px, 8px);
 }
 .box-text-articles{
     border-radius: 10px;
@@ -674,23 +695,24 @@ a.active{
     margin-left: 6%;
 }
 .box-img-articles{
-    width: 310px;
-    height: 120px;
-    display: block;
-    margin: auto;
+    width: 330px;
+    height: 150px;
+    transform: translate(40px, 13px);
     cursor: pointer;
-
 }
 .img-articles1 p{
     font-family: Sukhumvit Set;
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(241, 241, 241);
     position:relative;
+    /* margin:auto;
+    display:block; */
     text-align: center;
     transform: translate(3px, -95px);
 }
 .img-articles1{
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     float: left;
     cursor: pointer;
 }
@@ -700,8 +722,6 @@ a.active{
     border: 1px solid #5a5a5a;
     float: left;
     cursor: pointer;
-    display: block;
-    margin: auto;
 }
 .img-articles1:hover{
     opacity:0.7;
@@ -710,13 +730,15 @@ a.active{
 .bg-compare{
     height: 940px;
     width:100%;
-    margin-top: 20px;
+    margin: auto;
+    margin-top: 50px;
     float: left;
 }
 .box-bg-compare{
     height: 920px;
     width:100%;
     margin: auto;
+    transform: translate(0px, 22px);
 }
 .box-compare-inshow{
     border-style: solid;
@@ -727,6 +749,7 @@ a.active{
     background-color: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     margin: auto;
+    transform: translate(-5px, 10px);
 }
 .head-compare{
     border-radius: 10px;
@@ -813,19 +836,16 @@ select:focus > option:checked {
 }
 .compare-inshow1{
     border-style: solid;
-    width: 155px;
-    height:940px;
+    width: 530px;
+    height:720px;
     border-radius: 10px;
     border: 1px solid #0c0c0c;
     border-color: #979797;
     background-color: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,.1);
     margin: auto;
-    float: left;
-    margin-top: 100px;
-    margin-left: 10px;
+    transform: translate(-275px, 10px);
 }
-
 .box-compare-one{
     border-radius: 10px;
     height: 190px;
@@ -1074,17 +1094,15 @@ select:focus > option:checked {
 }
 .compare-inshow2{
     border-style: solid;
-    width: 155px;
-    height:940px;
+    width: 530px;
+    height: 720px;
     border-radius: 10px;
     border: 1px solid #0c0c0c;
     border-color: #979797;
     background-color: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,.1);
     margin: auto;
-    float: right;
-    margin-top: 100px;
-    margin-right: 10px;
+    transform: translate(275px, -740px);
 }
 .bx-cp{
     width: 160px;
@@ -1100,7 +1118,7 @@ select:focus > option:checked {
 }
 .text-compare-name-inshow2{
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 18px;
     color: black;
     text-align: center;
     font-weight: Medium;
@@ -1353,14 +1371,13 @@ select:focus > option:checked {
     height: 3580px;
     width: 100%;
 }
-/* .bt-back{
+.bt-back{
     margin-left: 68%;
-} */
+}
 .box-film-show1{
     width: 280px;
     height: 295px;
-    display: block;
-    margin: auto;
+    margin-left: 8%;
 }
 .text-name1{
     font-family: Poppins;
@@ -1374,32 +1391,68 @@ select:focus > option:checked {
 .box-Detail-show1{
     width: 280px;
     height: 360px;
-    display: block;
-    margin: auto;
+    margin-left: -5%;
+    margin-top: -8%;
 }
 .box-Order{
     height: 40px;
     width: 100%;
+    margin-left: 40%;
+    margin-top: -7%;
+}
+.bt-Order{
+    margin-top: -30%;
+    margin-left: 30%;
+}
+.box-camera2{
+    margin-top: 560%;
+    margin-left: 40%;
 }
 .box-camera-inshow1{
     margin-top: 2%;
+    margin-left: -4.5%;
+}
+/* .box-example{
+    width: 280px;
+    height: 650px;
+    transform: translate(-152px, 780px); 
+}
+.box-example-img1{
+    margin-left: 2.5%;
+    margin-right: 2%;
+    margin-top: 1.8%;
+    float: left;
+    cursor: pointer;
+}
+.bt-example{
+    transform: translate(-80px, -980px); 
+} */
+.box-example{
+    transform: translate(-80px, 770px);
 }
 .example-name1{
     font-family: Sukhumvit Set;
     font-size: 18px;
     color: rgb(63, 63, 63);
     font-weight: Medium;
-    padding-top: 2.3%;
+    padding-top: 2%;
 }
 .box-example-img1{
-    width: 100%;
-    height: 180px;
+    width: 230px;
+    height: 165px;
+    margin-left:1.6%;
+    margin-right: 2%;
+    float: left;
     cursor: pointer;
 }
 .img-example1{
     width: 230px;
     height: 165px;
     border: 1px solid #5a5a5a;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 10%;
+    float: left;
     cursor: pointer;
 }
 .img-example1:hover{
@@ -1415,13 +1468,19 @@ select:focus > option:checked {
     font-weight: lighter;
     font-style: italic;
     text-align: right;
+    margin-top: -10%;
+    margin-left: -341%;
     cursor: pointer;
 }
 .icon-example2{
     width: 15px;
     height: 15px;
-    margin-left: 45%;
-    margin-top: -15%;
+    margin-left: 50%;
+    margin-right: 5%;
+    margin-top: -11%;
+    float: left;
+    text-align: left;
+    opacity: 0.7;
     cursor: pointer;
 }
 .bt-example{
@@ -1433,15 +1492,26 @@ select:focus > option:checked {
     font-family: Sukhumvit Set;
     font-size: 16px;
     color: #5f5f5f;
+    margin-top: 3%;
+    margin-left: 15%;
+    cursor: pointer;
+    margin-bottom: 1%;
+}
+#down-example{
+    color: #030303;
+    margin-top: 2%;
+    margin-left: 3%;
 }
 .review{
     height: 300px;
     width:100%;
-    margin-top: 20px;
+    margin-left: -16%;
+    margin-top: 440%;
 }
 .box-review{
     width: 285px;
     height: 270px;
+    transform: translate(-45px, 0px);
 }
 .icon-review1{
     margin-top: 6%;
@@ -1461,14 +1531,21 @@ select:focus > option:checked {
     margin-left: -2%;
 }
 .articles{
-    height: 220px;
+    height: 300px;
     width:100%;
+    margin-left: 7%;
+    margin-top: -0.2%;
+}
+.box-articles-inshow1{
+    transform: translate(-110px, 2px);
 }
 .img-articles1 p{
     font-family: Sukhumvit Set;
-    font-size: 12px;
+    font-size: 15px;
     color: rgb(241, 241, 241);
     position:relative;
+    /* margin:auto;
+    display:block; */
     text-align: center;
     transform: translate(-150px, 5px);
 }
@@ -1487,6 +1564,7 @@ select:focus > option:checked {
 .box-compare-inshow{
     width: 350px;
     height: 1200px;
+    transform: translate(0px, 1060px);
 }
 .head-compare p{
     transform: translate(55px, -7px);
@@ -1515,8 +1593,14 @@ select:focus > option:checked {
     transform: translate(40px, 50px);
 }
 
+
+.compare-inshow1{
+    width: 155px;
+    height:940px;
+    transform: translate(-84px, 110px);
+}
 .text-compare-name{
-    font-size: 13px;
+    font-size: 15px;
     transform: translate(0px, 15px);
 }
 .img-compare{
@@ -1651,6 +1735,12 @@ select:focus > option:checked {
 .text-lode{
     transform: translate(20px, -375px);
 }
+
+.compare-inshow2{
+    width: 155px;
+    height:940px;
+    transform: translate(85px, 100px);
+}
 .box-compare-one-inshow2{
     height: 330px;
     width: 95%;
@@ -1658,12 +1748,13 @@ select:focus > option:checked {
     margin-top: -25%;
 }
 .text-compare-name-inshow2{
-    font-size: 13px;
+    font-size: 15px;
     transform: translate(0px, 10px);
 }
 .img-compare-inshow2{
     width: 117px;
     height: 117px;
+    transform: translate(19px, 40px);
 }
 .box-compare1-inshow2{
     width: 170px;
@@ -1695,9 +1786,38 @@ select:focus > option:checked {
     margin-left: -30%;
     margin-top: 7%;
 }
+/* .box-compare-two1-inshow2{
+    transform: translate(-15px, -16px);
+}
+.box-compare-two-inshow2 p{
+    transform: translate(-10px, 1px);
+}
+.box-compare-two2-inshow2{
+    transform: translate(20px, -150px);
+}
+.box-compare-two3-inshow2{
+    width: 95%;
+    transform: translate(-23px, 96px);
+}
+.box-compare-two4-inshow2{
+    transform: translate(-15px, -55px);
+}
+.box-compare-two5-inshow2{
+    transform: translate(-15px, -22px);
+}
+.box-compare-two6-inshow2{
+    width: 90%;
+    transform: translate(-18px, 40px);
+}
+.box-compare-two7-inshow2{
+    transform: translate(20px, -351px);
+}
+.box-compare-two8-inshow2{
+    transform: translate(-15px, -126px);
+}
 .bt-box-compare-inshow2{
     transform: translate(70px, -25px);
-} 
+} */
 .box-compare-two1-inshow2{
     transform: translate(-15px, -17px);
 }
@@ -1913,29 +2033,15 @@ select:focus > option:checked {
     .content{
         height: 2290px;
         width: 100%;
-        float: left;
+        margin-top: 5%;
     }
-    .left-col{
-        height: 1090px;
-        width: 35%;
-        margin: auto;
-        float: left;
-        
-    }
-    .box-bt-back{
-        height: 80px;
-        width: 280px;
-        display: block;
-        margin: auto;
-    }
-    /* .bt-back{
+    .bt-back{
         margin-left: 30%;
-    } */
+    }
     .box-film-show1{
         width: 280px;
         height: 295px;
-        display: block;
-        margin: auto;
+        margin-left: -1%;
     }
     .im-com1{
         width: 114px;
@@ -1958,57 +2064,96 @@ select:focus > option:checked {
 
     .box-Detail{
         margin-top: 3%;
+        margin-left: 8%;
     }
     .box-Detail-show1{
         width: 280px;
         height: 360px;
-        display: block;
-        margin: auto;
+        margin-left: -15%;
     }
     .Detail-inshow{
         margin-left: -2%;
     }
     .box-Order{
-        height: 40px;
+        height: 60px;
         width: 100%;
+        margin-left: 15%;
     }
-    .icon-example1{
-        width: 26px;
-        height: 26px;
-        margin-left: 25px;
-        margin-right: 10px;
-        margin-top: 13px;
-        float: left;
-        cursor: pointer;
+    .bt-Order{
+        margin-top: -10%;
+        margin-left: 13%;
+    }
+
+    .box-camera2{
+        margin-top: 6%;
+        margin-left: 15%;
     }
     .box-camera-inshow1{
         margin-top: 2%;
+        margin-left: -4.5%;
     }
+    /* .box-example{
+        width: 510px;
+        height: 650px;
+        margin-left: 29%;
+    }
+    .box-example-img1{
+        margin-left: 2.5%;
+        margin-right: 2%;
+        margin-top: 1.8%;
+        float: left;
+        cursor: pointer;
+    }
+    .bt-example{
+        margin-top: -100%;
+    } */
     .box-example{
-        width: 600px;
+        transform: translate(100px, -25px);
+        width: 380px;
         height: 670px;
-        display: block;
-        margin: auto;
     }
     .box-example-img1{
         width: 230px;
         height: 165px;
+        margin-left:4%;
+        margin-right: 20%;
+        float: left;
         cursor: pointer;
     }
     .box-example-img{
-        width: 100%;
+        width: 280px;
+        height: 580px;
     }
     .img-example1{
         width: 230px;
         height: 165px;
         border: 1px solid #5a5a5a;
+        margin-left: 0%;
+        margin-right: 1%;
+        margin-top: 20%;
+        float: left;
         cursor: pointer;
     }
     .icon-example2{
     width: 15px;
     height: 15px;
-    margin-left: 60%;
-    margin-top: -15%;
+    margin-left: 70%;
+    margin-right: 5%;
+    margin-top: -11%;
+    float: left;
+    text-align: left;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.icon-example2{
+    width: 15px;
+    height: 15px;
+    margin-left: 70%;
+    margin-right: 5%;
+    margin-top: -11%;
+    float: left;
+    text-align: left;
+    opacity: 0.7;
     cursor: pointer;
 }
 .text-example1{
@@ -2020,57 +2165,65 @@ select:focus > option:checked {
     font-weight: lighter;
     font-style: italic;
     text-align: right;
-    margin-top: -15%;
-    margin-left: -210%;
+    margin-top: -10%;
+    margin-left: -200%;
     cursor: pointer;
 }
-.right-col{
-    height: 1200px;
-    width: 65%;
-    margin-top: 80px;
-    float: left;
-}
-    
+    /* .box-example{
+        border-style: solid;
+        width: 835px;
+        height: 670px;
+        border-radius: 10px;
+        border-color: #979797;
+        background-color: white;
+        box-shadow: 3px 3px 6px rgba(0,0,0,.2);
+        margin-top: 70px;
+        display: block;
+        margin: auto;
+        transform: translate(-70px, 0px); 
+    } */
+    .review{
+        height: 300px;
+        width:100%;
+        margin-left: 13%;
+        margin-top: -0.2%;
+    }
     .box-review{
-        width: 550px;
+        width: 400px;
         height: 270px;
+        transform: translate(-40px, 20px);
     }
     .icon-review1{
-        margin-top: 15px;
-    }
-    .icon-review2{
-        margin-top: -1%;
+        margin-top: 6%;
     }
     .review1{
-        width: 400px;
-        height: 80px;
+        width: 360px;
+        height: 90px;
         transform: translate(0px, 9px);
     }
     .review2{
-        width: 400px;
-        height: 80px;
+        width: 360px;
+        height: 90px;
         transform: translate(0px, 19px);
     }
     .articles{
         height: 300px;
         width:100%;
-        /* margin-left: 13%;
-        margin-top: -0.2%; */
+        margin-left: 13%;
+        margin-top: -0.2%;
     }
     .box-articles-inshow1{
-        width: 550px;
+        width: 400px;
         height: 180px;
-        /* transform: translate(5px, 9px); */
+        transform: translate(5px, 9px);
     }
     .icon-articles1{
-        margin-top: 23px;
+        margin-top: 3;
     }
     .box-img-articles{
         width: 490px;
         height: 100px;
-        display: block;
-        margin: auto;
-        /* transform: translate(6px, 5px); */
+        transform: translate(6px, 5px);
         cursor: pointer;
     }
     .img-articles1 p{
@@ -2083,12 +2236,12 @@ select:focus > option:checked {
         text-align: center;
         transform: translate(-250px, -100px);
     }
-    .img-articles1{
-        margin-left: 30px;
-        margin-right: 10px;
+    /* .img-articles1{
+        margin-left: 10px;
+        margin-right: -10px;
         float: left;
         cursor: pointer;
-    }
+    } */
     .img-articles2{    
         width: 205px;
         height: 130px;
@@ -2101,6 +2254,7 @@ select:focus > option:checked {
     .box-compare-inshow{
         width: 690px;
         height: 975px;
+        transform: translate(2px, 10px);
     }
     .head-compare p{
         transform: translate(70px, -7px);
@@ -2134,7 +2288,11 @@ select:focus > option:checked {
     }
 
 
-    
+    .compare-inshow1{
+        width: 330px;
+        height:800px;
+        transform: translate(-170px, 30px);
+    }
     .text-compare-name{
         font-family: Poppins;
         font-size: 17px;
@@ -2277,15 +2435,11 @@ select:focus > option:checked {
         margin-right: 5%;
         transform: translate(90px, -400px);
     }
-    .compare-inshow1{
-        width: 330px;
-        height:800px;
-        margin-top: 30px;
-    }
+
     .compare-inshow2{
         width: 330px;
         height:800px;
-        margin-top: 30px;
+        transform: translate(172px, -805px);
     }
     .bx-cp{
         width: 330px;
@@ -2306,6 +2460,7 @@ select:focus > option:checked {
         font-family: Poppins;
         font-size: 15px;
         color: rgb(71, 71, 71);
+        transform: translate(-55px, -5px);
         float: left;
         cursor: pointer;
     }
@@ -2473,6 +2628,7 @@ select:focus > option:checked {
     margin-top: 0%;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .left-col{
     height: 1090px;
@@ -2482,9 +2638,8 @@ select:focus > option:checked {
 }
 .box-bt-back{
     height: 80px;
-    width: 330px;
-    display: block;
-    margin: auto;
+    width: 100%;
+    float: left;
 }
 .bt-back {
     width: 160px;
@@ -2494,8 +2649,12 @@ select:focus > option:checked {
     border-radius: 27px;
     font-family: Sukhumvit Set;
     font-size: 16px;
+    transform: translate(-41px, 20px); 
     box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    margin-bottom: 1%;
     cursor: pointer;
+    display: block;
+    margin: auto;
 }
 .bt-back:hover{
     background-color: #F65129;
@@ -2523,6 +2682,7 @@ select:focus > option:checked {
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     display: block;
     margin: auto;
+    transform: translate(37px, 15px);
 }
 #icon-heart-film{
     font-size: x-large;
@@ -2603,8 +2763,9 @@ select:focus > option:checked {
     color: black;
     font-weight: Medium;
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
-    display: block;
-    margin: auto;
+    /* display: block;
+    margin: auto; */
+    transform: translate(179px, 40px); 
 }
 .detail-name{
     border-radius: 10px;
@@ -2682,7 +2843,7 @@ select:focus > option:checked {
     float: left;
 }
 .box-Order{
-    height: 40px;
+    height: 120px;
     width: 100%;
     float: left;
 }
@@ -2697,9 +2858,9 @@ select:focus > option:checked {
     color: #ffffff;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,.2);
-    display: block;
-    margin: auto;
-    /* transform: translate(90px, 110px);  */
+    /* display: block;
+    margin: auto; */
+    transform: translate(90px, 110px); 
 }
 .bt-Order:hover{
     background-color: rgb(255, 255, 255);
@@ -2720,6 +2881,7 @@ select:focus > option:checked {
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     display: block;
     margin: auto;
+    transform: translate(-30px, 4px);
 }
 .text-camera1{
     width: 300%;
@@ -2758,12 +2920,12 @@ select:focus > option:checked {
 .box-example-right{
     height: 670px;
     width:100%;
-    margin-top: 80px;
+    margin-top: 95px;
     float: left;
 }
 .box-example{
     border-style: solid;
-    width: 750px;
+    width: 835px;
     height: 670px;
     border-radius: 10px;
     border-color: #979797;
@@ -2772,19 +2934,20 @@ select:focus > option:checked {
     margin-top: 70px;
     display: block;
     margin: auto;
+    transform: translate(-70px, 0px); 
 }
 .icon-example1{
     width: 26px;
     height: 26px;
-    margin-left: 25px;
-    margin-right: 10px;
-    margin-top: 13px;
+    margin-left: 5.6%;
+    margin-right: 2%;
+    margin-top: 2%;
     float: left;
     cursor: pointer;
 }
 .box-example-img{
-    width: 100%;
-    height: 550px;
+    width: 770px;
+    height: 580px;
 }
 .example-name1{
     font-family: Sukhumvit Set;
@@ -2796,12 +2959,20 @@ select:focus > option:checked {
 .box-example-img1{
     width: 600px;
     height: 165px;
+    margin-left: 6%;
+    margin-right: -2.8%;
+    margin-top: 1.8%;
+    float: left;
     cursor: pointer;
 }
 .img-example1{
     width: 230px;
     height: 165px;
     border: 1px solid #5a5a5a;
+    margin-left: 1%;
+    margin-right: -3%;
+    margin-top: 2%;
+    float: left;
     cursor: pointer;
 }
 .img-example1:hover{
@@ -2818,10 +2989,24 @@ select:focus > option:checked {
     font-family: Sukhumvit Set;
     font-size: 16px;
     color: #5f5f5f;
+    margin-top: -2%;
+    margin-left: 35.5%;
+    cursor: pointer;
+    margin-bottom: 1%;
+}
+#down-example{
+    color: #030303;
+    margin-top: 2%;
+    margin-left: 3%;
 }
 .icon-example2{
     width: 15px;
     height: 15px;
+    margin-left: 70%;
+    margin-right: 5%;
+    margin-top: -11%;
+    float: left;
+    text-align: left;
     opacity: 0.7;
     cursor: pointer;
 }
@@ -2834,17 +3019,20 @@ select:focus > option:checked {
     font-weight: lighter;
     font-style: italic;
     text-align: right;
+    margin-top: -10%;
+    margin-left: -200%;
     cursor: pointer;
 }
 .review{
     height: 230px;
     width:100%;
+    margin: auto;
     margin-top: 2%;
     float: left;
 }
 .box-review{
     border-style: solid;
-    width: 760px;
+    width: 835px;
     height: 218px;
     border-radius: 10px;
     border-color: #979797;
@@ -2852,6 +3040,7 @@ select:focus > option:checked {
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     display: block;
     margin: auto;
+    transform: translate(-70px, 6px);
 }
 .head-review{
     border-radius: 10px;
@@ -2885,7 +3074,7 @@ select:focus > option:checked {
 }
 .review1{
     border-style: solid;
-    width: 740px;
+    width: 760px;
     height: 50px;
     border-radius: 30px;
     border-color: #979797;
@@ -2905,7 +3094,7 @@ select:focus > option:checked {
 }
 .review2{
     border-style: solid;
-    width: 740px;
+    width: 760px;
     height: 50px;
     border-radius: 30px;
     border-color: #979797;
@@ -2927,11 +3116,11 @@ select:focus > option:checked {
     width:100%;
     margin: auto;
     float: left;
-    /* margin-top: 1.3%; */
+    margin-top: 1.3%;
 }
 .box-articles-inshow1{
     border-style: solid;
-    width: 770px;
+    width: 835px;
     height: 205px;
     border-radius: 10px;
     border-color: #979797;
@@ -2939,6 +3128,7 @@ select:focus > option:checked {
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     display: block;
     margin: auto;
+    transform: translate(-70px, 8px);
 }
 .box-text-articles{
     border-radius: 10px;
@@ -2971,6 +3161,7 @@ select:focus > option:checked {
 .box-img-articles{
     width: 750px;
     height: 100px;
+    transform: translate(40px, 13px);
     cursor: pointer;
 }
 .img-articles1 p{
@@ -3003,22 +3194,26 @@ select:focus > option:checked {
 .bg-compare{
     height: 940px;
     width:100%;
+    margin: auto;
+    margin-top: 50px;
     float: left;
 }
 .box-bg-compare{
     height: 920px;
     width:100%;
     margin: auto;
+    transform: translate(0px, 22px);
 }
 .box-compare-inshow{
     border-style: solid;
-    width: 1180px;
+    width: 1240px;
     height: 890px;
     border-radius: 10px;
     border-color: #979797;
     background-color: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
     margin: auto;
+    transform: translate(-5px, 10px);
 }
 .head-compare{
     border-radius: 10px;
@@ -3101,7 +3296,7 @@ select:focus > option:checked {
     display: block;
     cursor: pointer;
     box-shadow: 3px 3px 6px rgba(0,0,0,.2);
-    margin-top: -50px;
+    transform: translate(20px, -39px);
 }
 .compare-inshow1{
     border-style: solid;
@@ -3113,8 +3308,7 @@ select:focus > option:checked {
     background-color: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,.1);
     margin: auto;
-    margin-left: 30px;
-
+    transform: translate(-275px, 10px);
 }
 .box-compare-one{
     border-radius: 10px;
@@ -3394,8 +3588,7 @@ select:focus > option:checked {
     background-color: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,.1);
     margin: auto;
-    margin-right: 30px;
-    /* transform: translate(275px, -740px); */
+    transform: translate(275px, -740px);
 }
 .bx-cp{
     width: 530px;
